@@ -47,7 +47,6 @@ main{
 }
 
 .container{
-  max-width: 1300px;
   width: 85%;
   height: 100%;
   margin: 40px auto;
@@ -69,14 +68,16 @@ main{
 section.viola{
   background-color: #9593E6;
   width: 100%;
-  height: 100%;
-  justify-content: center;
+  padding-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .strategic-planning{
-  width: 100%;
+  margin-top: 30px;
+  width: 90%;
   flex-direction: column;
-  align-items: center;
+    
 }
 
 
@@ -85,14 +86,43 @@ section.viola{
 }
 
 .app-development{
-  width: 100%;
+  margin-top: 30px;
+  background-color: white;
+  width: 90%;
   flex-direction: column;
-  align-items: center;
+  
 }
 .app-development img{
   width: 85%;
 }
 
+section.testimonials{
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.testimonial.description{
+  flex-direction: column;
+  max-width: 750px;
+}
+.testimonial{
+  max-width: 750px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #9593E6;
+}
+.testimonial img{
+  width: 150px;
+}
+
+.benefits{
+  background-color: #9593E6;
+  width: 100%;
+}
 
 
 
@@ -119,6 +149,10 @@ section.viola{
   }
   .box-card{
     justify-content: space-around;
+  }
+  /* main */
+  .testimonial{
+    flex-direction: row;
   }
 }
 
@@ -150,7 +184,6 @@ section.viola{
   .card-big{
     width: 64%;
     height: 350px;
-    background-color: #B5DDFF;
   }
   .card.long-card{
     width: 30%;
@@ -160,12 +193,21 @@ section.viola{
     
     width: 30%;
     height: 350px;
-    background-color: #B5DDFF;
   }
   .box-card{
     justify-content: space-around;
   }
 
+  section.viola{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .strategic-planning, .app-development{
+    max-width: 350px;
+  }
+  
+  
 
 
 
