@@ -12,9 +12,9 @@
   display: flex;
 }
 a{
-  color: white;
   text-decoration: none;
 }
+
 
 
 
@@ -41,6 +41,7 @@ a{
 
 
 /* MAIN RULES */
+
 main{
   padding-top: 80px;
   margin-bottom: 80px;
@@ -115,13 +116,43 @@ section.testimonials{
   text-align: center;
   background-color: #9593E6;
 }
-.testimonial img{
+.testimonial img, 
+.about img{
   width: 150px;
 }
-
-.benefits{
-  background-color: #9593E6;
+.number-card-box{
   width: 100%;
+  margin: 0 auto;
+}
+.benefits{
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #9593E6;
+}
+.card-title{
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px;
+}
+.number-cards{
+  margin-bottom: 30px;
+  width: 80%;
+  height: 300px;
+  background-color:white;
+  color: #9593E6;
+}
+.about-us-text,
+.about-us-img{
+  width: 100%;
+  flex-direction: column;
+}
+.about-us-img{
+  max-width: 300px;
+}
+
+.about-all{
+  justify-content: space-between;
+  max-width: 1000px;
 }
 
 
@@ -130,7 +161,7 @@ section.testimonials{
 
 @media screen and (min-width:570px){
 
-  .container{
+  .container.box-card{
     width: 95%;
   }
   .card-big{
@@ -150,9 +181,19 @@ section.testimonials{
   .box-card{
     justify-content: space-around;
   }
-  /* main */
+
   .testimonial{
     flex-direction: row;
+  }
+  .number-cards{
+    width: 45%; 
+  }
+
+  .about-us-text{
+    width: 45%;
+  }
+  .about-us-img{
+    width: 40%;
   }
 }
 
@@ -176,7 +217,7 @@ section.testimonials{
 
   /* main rules */
 
-  .container{
+  .container.box-card{
     width: 80%;
     margin: 40px auto;
   }
@@ -207,6 +248,11 @@ section.testimonials{
     max-width: 350px;
   }
   
+  .number-cards{
+    width: 30%; 
+  }
+  
+  }
   
 
 
@@ -215,4 +261,3 @@ section.testimonials{
 
 
 
-}
