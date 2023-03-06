@@ -5,7 +5,9 @@
 }
 
 /* GENERAL RULES */
-
+.d-wrap{
+  flex-wrap: wrap;
+}
 .d-flex{
   display: flex;
 }
@@ -17,11 +19,13 @@ a{
 
 
 
+
 /* HEADER RULES  */
 .menu-bar{
+  position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 30px;
   width: 100%;
   height: 80px;
   background-color: #0084FD;
@@ -36,9 +40,93 @@ a{
 }
 
 
+/* MAIN RULES */
+main{
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.container{
+  max-width: 1300px;
+  width: 85%;
+  height: 100%;
+  margin: 40px auto;
+}
+
+.card-big{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 500px;
+  background-color: #B5DDFF;
+}
+.card{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 300px;
+  background-color: #B5DDFF;
+}
+
+section.viola{
+  background-color: #9593E6;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.strategic-planning{
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.strategic-planning img{
+  width: 85%;
+}
+
+.app-development{
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.app-development img{
+  width: 85%;
+}
+
+
+
+
 /* MEDIA QUERY PROPRETY */
 
-@media screen and (min-width:810px) {
+@media screen and (min-width:570px){
+
+  .container{
+    width: 95%;
+  }
+  .card-big{
+    width: 64%;
+    height: 550px;
+    background-color: #B5DDFF;
+  }
+  .card.long-card{
+    height: 550px;
+  }
+  .card{
+    
+    width: 30%;
+    height: 350px;
+    background-color: #B5DDFF;
+  }
+  .box-card{
+    justify-content: space-around;
+  }
+}
+
+
+
+
+@media screen and (min-width:768px) {
+  /* header rules */
   .menu-burger{
     display: none;
   }
@@ -48,7 +136,41 @@ a{
   }
 
   .menu-bar{
+    padding: 0px 10%;
+  }
+  /* //header rules //*/
+
+  /* main rules */
+
+  .container{
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  .card-big{
+    width: 64%;
+    height: 350px;
+    background-color: #B5DDFF;
+  }
+  .card.long-card{
+    width: 30%;
+    height: 350px;
+  }
+  .card{
+    
+    width: 30%;
+    height: 350px;
+    background-color: #B5DDFF;
+  }
+  .box-card{
     justify-content: space-around;
   }
+
+
+
+
+  /*\\\ main rules\\\ */
+
+
 
 }
